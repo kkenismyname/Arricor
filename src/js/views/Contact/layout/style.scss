@@ -1,0 +1,52 @@
+@import "~theme/configs/mixins";
+
+.contact-page {
+  .contact-container {
+    margin-top: rem(246);
+    @media (min-width: rem(320)) and (max-width: rem(480)) {
+      margin-top: rem(122);
+    }
+    .contact-form-description {
+      font-size: rem(24);
+      line-height: rem(36);
+      color: #f8f8f8;
+      @media (min-width: rem(320)) and (max-width: rem(480)) {
+        font-size: rem(18);
+        line-height: rem(27);
+      }
+    }
+  }
+  .contact-form {
+    font-size: rem(24);
+    line-height: rem(36);
+    color: #f8f8f8;
+    a {
+      color: #f8f8f8 !important;
+    }
+    @media (min-width: rem(320)) and (max-width: rem(480)) {
+      font-size: rem(18);
+      line-height: rem(27);
+    }
+    input, select, .prefered-contact {
+      margin-bottom: rem(50);
+      @media (min-width: rem(320)) and (max-width: rem(480)) {
+        margin-bottom: rem(37);
+      }
+      @media (min-width: rem(768)) and (max-width: rem(1024)) {
+        margin-bottom: rem(37);
+      }
+      @media (min-width: rem(1024)) and (max-width: rem(1366)) {
+        margin-bottom: rem(37);
+      }
+    }
+    @media (min-width: rem(320)) and (max-width: rem(480)) {
+      margin-top: rem(141);
+    }
+    @media (min-width: rem(768)) and (max-width: rem(1024)) {
+      margin-top: rem(141);
+    }
+    @media (min-width: rem(1024)) and (max-width: rem(1366)) {
+      margin-top: rem(141);
+    }
+  }
+}

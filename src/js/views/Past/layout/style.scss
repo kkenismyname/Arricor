@@ -1,0 +1,72 @@
+@import "~theme/configs/mixins";
+
+.past-page {
+  .nav-container {
+    margin-top: rem(90);
+    .nav-bar {
+      margin: auto;
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (min-width: rem(320)) and (max-width: rem(480)) {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      @media (min-width: rem(768)) and (max-width: rem(1024)) {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      @media (min-width: rem(1024)) and (max-width: rem(1366)) {
+        width: 100%;
+      }
+      .nav-item {
+        text-align: center;
+        display: flex;
+        @media (min-width: rem(320)) and (max-width: rem(480)) {
+          margin-top: rem(10);
+        }
+        @media (min-width: rem(768)) and (max-width: rem(1024)) {
+          margin-top: rem(10);
+        }
+        a {
+          color: #fefefe;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .pasts-container {
+    @media (min-width: rem(320)) and (max-width: rem(480)) {
+      margin-top: rem(64);
+    }
+    .past-section {
+      margin-top: rem(120);
+      @media (min-width: rem(320)) and (max-width: rem(480)) {
+        margin-top: rem(120);
+      }
+    }
+    .past-title {
+      font-size: rem(64);
+      line-height: rem(86);
+      color: #fefefe;
+      @media (min-width: rem(320)) and (max-width: rem(480)) {
+        font-size: rem(28);
+        line-height: rem(38);
+      }
+    }
+    .past-content {
+      font-size: rem(24);
+      line-height: rem(36);
+      color: #7d7d7d;
+      @media (min-width: rem(320)) and (max-width: rem(480)) {
+        font-size: rem(16);
+        line-height: rem(24);
+        margin-top: rem(21);
+      }
+    }
+  }
+}

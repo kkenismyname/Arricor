@@ -1,0 +1,19 @@
+@import "~theme/configs/mixins";
+@import "~theme/configs/color";
+
+.privacy-page {
+  .privacy-description {
+    color: #757575;
+    font-size: rem(20);
+    line-height: rem(30);
+    margin-top: rem(112);
+    @media (min-width: rem(320)) and (max-width: rem(480)) {
+      margin-top: rem(34);
+      font-size: rem(16);
+      line-height: rem(24);
+    }
+    a {
+      color: $white-color;
+    }
+  }
+}

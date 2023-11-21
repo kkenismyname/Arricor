@@ -1,0 +1,10 @@
+@import "~theme/configs/mixins";
+
+.divider {
+  width: rem(1);
+  height: rem(200);
+  border-left: 1px solid rgba(223, 223, 223, 0.5);
+  @media (min-width: rem(320)) and (max-width: rem(480)) {
+    height: rem(100);
+  }
+}

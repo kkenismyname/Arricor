@@ -1,0 +1,53 @@
+{
+  "app": {
+    "js": "/assets/app-c5728d24592525a47f1d.js"
+  },
+  "vendors~app": {
+    "js": "/assets/1.c5728d24592525a47f1d.js"
+  },
+  "": {
+    "json": [
+      "/assets.json",
+      "/manifest.json"
+    ],
+    "svg": [
+      "/assets/04bf7f80a7bef0b0f8cc3cbbbec90fbf.svg",
+      "/assets/2b536d86934a396fab4a4fe31ec0c41a.svg",
+      "/assets/2be5ac43f5ed8505d66eef712335f9ba.svg",
+      "/assets/3e3f8279a4d38823f5ec3325e3d89e88.svg",
+      "/assets/57d5d7efc487a97c24942f68e2cb863d.svg",
+      "/assets/5997d6ef9c7be30a3fd446c6f0234921.svg",
+      "/assets/79a5dd9ca5086511521a0633e9324371.svg",
+      "/assets/873456b92e1ef79ede15cafb8b960661.svg",
+      "/assets/967a1f85c9892efedccc3dfcedc02922.svg",
+      "/assets/a5631bf0c3740402845d0dc114f66cfd.svg",
+      "/assets/dbc92dffc9f9a329a68f60233bb9b5ef.svg",
+      "/assets/ef7904b206be791e020ba092b06ab5e6.svg",
+      "/assets/fe9d2331bcebf3c0798f79cc9d0313c4.svg",
+      "/assets/fecb1e1c1fdbba2146c24bdbc8cbd894.svg"
+    ],
+    "png": [
+      "/assets/04ec7842bedff543620b1b3169796aaf.png",
+      "/assets/2e5ffab5083241b083d0bc8042778f98.png",
+      "/assets/77acb2f984229f11184f634541552989.png",
+      "/assets/a990e04d52839515134caa925f6b3fbd.png",
+      "/assets/b35820a93d6250a7895bd787d1e9b57c.png",
+      "/assets/d9fb9860470fd61e8e70e6aad3359130.png",
+      "/assets/df1d0c457190b1180529333a3e897740.png",
+      "/icon.png",
+      "/icon_mediumtile.png",
+      "/icon_smalltile.png",
+      "/icon_widetile.png",
+      "/ios-icon.png",
+      "/logo.png",
+      "/touch-icon-iphone.png"
+    ],
+    "ico": "/assets/dd9319c753ceb23eea510452b1395b17.ico",
+    "md": "/assets/ed3cbed23ade2d9f02993b4914788886.md",
+    "html": "/index.html",
+    "txt": "/robots.txt"
+  },
+  "metadata": {
+    "version": "0.0.1"
+  }
+}

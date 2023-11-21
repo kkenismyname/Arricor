@@ -1,0 +1,104 @@
+@import "~theme/configs/color";
+@import "~theme/configs/mixins";
+
+.header-container {
+  display: flex;
+  align-items: baseline;
+  .mobile-menu {
+    z-index: 999;
+    display: none;
+    .hamburger{
+      transform: scale(.5);
+      outline: none;
+      position: absolute;
+      top: rem(16);
+      right: rem(0);
+    }
+    @media (min-width: rem(320)) and (max-width: rem(480)) {
+      display: block;
+    }
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: $white-color !important;
+    }
+    .header-dropdown {
+      display: none;
+      position: absolute;
+      background-color: $background-color;
+      transition: all 0.5s;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+      left: 0;
+      &.show {
+        display: block;
+        overflow: hidden;
+        overflow-y: overlay;
+        -ms-overflow-y: auto;
+        height: calc(100vh - 127px);
+        @-moz-document url-prefix() {
+          overflow-y: auto;
+        }
+        margin-top: rem(75);
+      }
+      .menu-item {
+        font-size: rem(32);
+        line-height: rem(41);
+        text-align: right;
+        padding: rem(28) rem(24) 0 0;
+        a {
+          text-decoration: none;
+          color: $mob-nav-color;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .logo-container {
+    width: 33%;
+    padding: rem(56) 0 0 rem(60);
+    .logo-text {
+      color: $white-color;
+      text-decoration: none;
+      font-family: IBM Plex Sans;
+      font-weight: 500;
+      font-size: rem(36);
+      line-height: rem(31);
+    }
+  }
+  @media (min-width: rem(320)) and (max-width: rem(480)) {
+    .logo-container {
+      width: 50%;
+      padding: rem(35) 0 0 rem(24);
+      .logo-text {
+        font-size: rem(18);
+        line-height: rem(23);
+      }
+    }
+  }
+
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    width: 66%;
+
+    .menu-text {
+      font-size: rem(18);
+      line-height: rem(24);
+      height: rem(0);
+      color: $menu-text-color;
+      text-decoration: none;
+      margin-right: rem(55);
+      @media (min-width: rem(768)) and (max-width: rem(1024)){
+        margin-right: rem(20);
+      }
+      text-transform: capitalize;
+    }
+
+    @media (min-width: rem(320)) and (max-width: rem(480)) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "~theme/configs/mixins";
+@import "~theme/configs/color";
+
+.section {
+  .title {
+    padding: 0;
+    font-size: rem(56);
+    line-height: rem(76);
+    color: #efefef;
+    @media (min-width: rem(320)) and (max-width: rem(480)) {
+      font-size: rem(28);
+      line-height: rem(38);
+    }
+  }
+  .player {
+    @media (min-width: rem(320)) and (max-width: rem(480)) {
+      margin-top: rem(20);
+    }
+    @media (min-width: rem(768)) and (max-width: rem(1024)) {
+      margin-top: rem(20);
+    }
+    @media (min-width: rem(1024)) and (max-width: rem(1366)) and (-webkit-min-device-pixel-ratio: 2) {
+      margin-top: rem(20);
+    }
+  }
+  .link-container {
+    margin-top: rem(90);
+    @media (min-width: rem(320)) and (max-width: rem(480)) {
+      margin-top: rem(90);
+    }
+    .link {
+      padding: 0;
+      &.next {
+        text-align: right;
+      }
+      a {
+        color: #cecece;
+        text-decoration: none;
+        font-size: rem(64);
+        line-height: rem(82);
+        @media (min-width: rem(320)) and (max-width: rem(480)) {
+          font-size: rem(24);
+          line-height: rem(31);
+          img {
+            width: rem(35);
+            height: rem(20);
+          }
+        }
+        @media (min-width: rem(768)) and (max-width: rem(1024)){
+          font-size: rem(24);
+          line-height: rem(31);
+          img {
+            width: rem(35);
+            height: rem(20);
+          }
+        }
+      }
+    }
+  }
+}

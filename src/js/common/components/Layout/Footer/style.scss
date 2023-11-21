@@ -1,0 +1,35 @@
+@import "~theme/configs/color";
+@import "~theme/configs/mixins";
+
+.footer-container {
+  margin-top: rem(90);
+  @media (min-width: rem(320)) and (max-width: rem(480)) {
+    margin-top: rem(90);
+  }
+  .footer-box {
+    padding: 0;
+    @media (min-width: rem(320)) and (max-width: rem(480)) {
+      margin-top: rem(98);
+    }
+    border-top: 1px solid #424242;
+    .title {
+      color: #7d7d7d;
+      text-transform: capitalize;
+    }
+    .content {
+      color: #efefef;
+      font-size: rem(24);
+      line-height: rem(36);
+      .contact-link {
+        color: $white-color;
+      }
+    }
+  }
+  .copy-right {
+    color: #6d6d6d;
+    margin-top: rem(150);
+    @media (min-width: rem(320)) and (max-width: rem(480)) {
+      margin-top: rem(83);
+    }
+  }
+}

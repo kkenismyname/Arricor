@@ -1,0 +1,68 @@
+@import "~theme/configs/mixins.scss";
+@import "~theme/configs/color";
+@import "~theme/configs/animate.min";
+
+@font-face {font-family: "Aktiv Grotesk"; src: url("//db.onlinewebfonts.com/t/0a2637106588e71433ed60ca3118b98f.eot"); src: url("//db.onlinewebfonts.com/t/0a2637106588e71433ed60ca3118b98f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0a2637106588e71433ed60ca3118b98f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0a2637106588e71433ed60ca3118b98f.woff") format("woff"), url("//db.onlinewebfonts.com/t/0a2637106588e71433ed60ca3118b98f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0a2637106588e71433ed60ca3118b98f.svg#Aktiv Grotesk") format("svg"); }
+@font-face {font-family: "Aktiv Grotesk Bold"; src: url("//db.onlinewebfonts.com/t/6cd98f92c03c09152517c4b1042bf3e1.eot"); src: url("//db.onlinewebfonts.com/t/6cd98f92c03c09152517c4b1042bf3e1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6cd98f92c03c09152517c4b1042bf3e1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6cd98f92c03c09152517c4b1042bf3e1.woff") format("woff"), url("//db.onlinewebfonts.com/t/6cd98f92c03c09152517c4b1042bf3e1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6cd98f92c03c09152517c4b1042bf3e1.svg#Aktiv Grotesk") format("svg"); }
+
+html, body {
+  font-size: 18px;
+  font-family: Aktiv Grotesk;
+  margin: 0;
+  padding: 0;
+  color: $white-color;
+  background-color: $background-color !important;
+  background: radial-gradient(44.02% 59.5% at 0% 0%, rgba(14, 100, 177, 0.32) 0%, rgba(42, 116, 133, 0) 100%);
+  @media (min-width: rem(320)) and (max-width: rem(480)) {
+    background: radial-gradient(100% 30% at 0% 0%, rgba(14, 100, 177, 0.32) 0%, rgba(42, 116, 133, 0) 100%);
+  }
+  .main-container {
+    padding: rem(90) rem(60) rem(60) rem(60);
+    @media (min-width: rem(320)) and (max-width: rem(480)) {
+      padding: rem(97) rem(24) rem(60) rem(24);
+    }
+  }
+  h1 {
+    font-size: rem(40);
+    line-height: rem(51);
+  }
+  h2 {
+    font-size: rem(32);
+    line-height: rem(41);
+  }
+  h3 {
+    font-size: rem(26);
+    line-height: rem(33);
+  }
+  h4 {
+    font-size: rem(20);
+    line-height: rem(26);
+  }
+  h5 {
+    font-size: rem(16);
+    line-height: rem(20);
+  }
+  h6 {
+    font-size: rem(14);
+    line-height: rem(18);
+  }
+  .body-text {
+    font-size: rem(16);
+    line-height: rem(24);
+    color: $body-color;
+  }
+  .body-small-text {
+    font-size: rem(12);
+    line-height: rem(18);
+    color: $body-color;
+  }
+  .text-link {
+    font-size: rem(12);
+    line-height: rem(18);
+    color: $link-color;
+  }
+  .scroll-up-container {
+    bottom: 50px !important;
+    outline: none;
+  }
+}
